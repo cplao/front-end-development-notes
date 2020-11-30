@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .all {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header {
+        height: 15%;
+        border-style: solid;
+        border-bottom: none;
+    }
+    
+    .content {
+        height: 70%;
+        border: solid;
+    }
+    
+    .content-left {
+        width: 50%;
+        float: left;
+        height: 100%;
+        border: 1px;
+        border-right: solid;
+    }
+    
+    .content-right {
+        width: 50%;
+        float: left;
+        height: 100%;
+        border: 1px none;
+        margin-right: -3px;
+    }
+    
+    .footer {
+        height: 15%;
+        border: solid;
+        border-top: none;
+    }
+</style>
+
+<body>
+    <div class="all">
+        <div class="header">
+            这是一个header
+        </div>
+
+        <div class="content">
+            <div class="content-left">
+                这是content的左边
+            </div>
+
+            <div class="content-right">
+                这时content的右边
+            </div>
+        </div>
+
+        <div class="footer">
+            这是一个footer
+        </div>
+    </div>
+</body>
+
+</html>

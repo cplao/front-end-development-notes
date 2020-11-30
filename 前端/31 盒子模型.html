@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .header {
+            height: 10%;
+            width: 100%;
+            border-style: solid;
+            /* 边框的类型 */
+            /* border-width: 20px; */
+            /* 边框的宽度 */
+            /* border-color: red; */
+            /* 边框的颜色 */
+            /* 可以直接写border后加类型宽度颜色 没有顺序 */
+            /* border-top: 10px solid pink; */
+            /* border-bottom: 10px solid hotpink; */
+            /* border-left: red; */
+            /* border-right: red; */
+            /* 上下左右边框 可以先直接写颜色宽度顺序 和上面border是一样的 */
+            border-collapse: collapse;
+            /* 合并相邻的边框 */
+            padding-left: 20px;
+            /* 左边内边框，可以调字体靠左边界的距离 */
+            /* 一样的可以调对上下左右的距离 */
+        }
+        
+        .content {
+            height: 60%;
+            width: 100%;
+        }
+        
+        .content-left {
+            width: 50%;
+            height: 10%;
+            float: left;
+            height: 100px;
+            border: 1px solid;
+            border-right: none;
+        }
+        
+        .content-right {
+            width: 50%;
+            height: 10%;
+            float: left;
+            height: 100px;
+            border: 1px solid;
+            margin-right: -3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            这是一个header
+        </div>
+
+        <div class="content">
+            <div class="content-left">
+                这是content的左边
+            </div>
+
+            <div class="content-right">
+                这时content的右边
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

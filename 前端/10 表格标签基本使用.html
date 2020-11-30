@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--快速生成表格 <table>(tr*?>th*?)+tr*?>td*?-->
+    <!--？填的是数字-->
+    <p>表格标签</p>
+    <table align="center" border="1" cellpadding="20" cellspacing="0" width="100" height="100">
+        <!-- 表格标签-->
+
+        <thead>
+            <tr>
+                <!--行-->
+                <th>姓名</th>
+                <!--单元格-->
+                <th>年龄</th>
+                <th>性别</th>
+
+            </tr>
+        </thead>
+        <!--表格头部标签-->
+
+        <tbody>
+            <tr>
+                <!--行-->
+                <td>刘德华</td>
+                <!--单元格-->
+                <td>23</td>
+                <td>男</td>
+
+            </tr>
+            <tr>
+                <!--行-->
+                <td>张学友</td>
+                <!--单元格-->
+                <td>24</td>
+                <td>男</td>
+            </tr>
+        </tbody>
+        <!--表格主题标签-->
+
+    </table>
+    <!--有多少个单元格写多少个td 没有列的概念-->
+    <!--表头单元格td 改为th会加粗加居中-->
+    <!--表格边框那些一般用css来显示-->
+    <!--aligh 表示表格所在的位置 可以有左 右 中-->
+    <!--border=1是加边框-->
+    <!--cellpadding=20 是单元边框与内容的空白-->
+    <!--cellspacing=0 单元格之间的空白 0 表示边框只有一条线-->
+    <table align="center" border="1" cellspacing="0" width="500" height="500">
+        <!--合并单元格演示-->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+    </table>
+    <!--合并单元格要写再目标代码上-->
+    <!--跨行合并 colspan时写在最上面那个单元格-->
+    <!--跨列合并 rowspan时要写在最左边的那个单元格-->
+    <!--要把多余的单元格删除-->
+</body>
+
+</html>

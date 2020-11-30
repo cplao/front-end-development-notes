@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="demo.php" method="POST" name="name1">
+        <!--后面信息不用管 需要后端知识-->
+        <!--input输入表单元素：-->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="100"> <br>
+        <!--text:文本内容20字 -->
+        <!-- maxlength是控制输入长度 -->
+        密码：<input type="password" name="password"> <br>
+        <!-- password 用户看不到输入的密码 -->
+        性别：男 <input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女"> <br>
+        <!-- radio 单选按钮 -->
+        <!-- name是表单元素的名字，只有一样名字的name才能实现多选一 -->
+        爱好： 吃饭<input type="checkbox" name="hobby" checked="checked"> 睡觉<input type="checkbox" name="hobby"> 哈哈哈<input type="checkbox" name="hobby"> <br>
+        <!--checkbox 可以多选-->
+        <!-- checked 可以在一开始默认选上的 -->
+        <input type="submit" value="免费注册">
+        <!--提交按钮 默认值是提交 value是可以更改这个值-->
+        <input type="reset" value="重新编写">
+        <!--将表单恢复到默认状态-->
+        <input type="button" value="获取短信验证码">
+        <!-- 普通按钮 配合js使用 -->
+        <input type="file" value="上传文件">
+        <!--文件上传键-->
+        <label for="dianhua"> 电话号码:</label> <input type="text" id="dianhua">
+        <!--labal 标签可以绑定一个表单元素 当点机他时自动选择表单元素中的值或者输入框 记得要加上一样的id-->
+
+    </form>
+    <!--value name 在多选和单选是给后台人选使用的-->
+    <!-- checked 是一开始就默认被选中的 -->
+</body>
+
+</html>
