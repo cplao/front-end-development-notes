@@ -1,0 +1,7 @@
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true  #可以隐藏发delete和put（需要前端实现）
+#  mvc:
+#    static-path-pattern: /res/** #访问静态资源要加上前缀,欢迎页要禁用了（Spring boot的bug）

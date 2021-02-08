@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
 </head>
 <style>
     .all {
@@ -49,26 +51,48 @@
     }
 </style>
 
+
 <body>
     <div class="all">
         <div class="header">
             这是一个header
+            <span>
+                <form name="input" action="http://localhost:8080/name" onsubmit="return addchange()" method="post">
+                Username: <input type="text" name="username">
+                <input type="submit" value="Submit">
+                </form></span>
+
+
+
+
+
+            <span>
+                <form name="inputformula" action="http://localhost:8080/formula" onsubmit="return addchange()" method="get">
+                formula: <input type="text" name="formula">
+                <input type="submit" value="Submit">
+                </form></span>
+
         </div>
 
         <div class="content">
             <div class="content-left">
                 这是content的左边
+
+
+
             </div>
 
             <div class="content-right">
                 这时content的右边
+
+
+
+            </div>
+
+            <div class="footer">
+                这是一个footer
             </div>
         </div>
-
-        <div class="footer">
-            这是一个footer
-        </div>
-    </div>
 </body>
 
 </html>
