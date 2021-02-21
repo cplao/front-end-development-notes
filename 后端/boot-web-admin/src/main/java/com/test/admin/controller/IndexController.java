@@ -1,0 +1,66 @@
+package com.test.admin.controller;
+
+import com.test.admin.bean.User;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.thymeleaf.util.StringUtils;
+
+import javax.servlet.http.HttpSession;
+
+@Controller
+public class IndexController {
+
+
+    // 来登录页，发请求返回登录页
+    @GetMapping(value={"/","/login"})
+    public String  loginPage(){
+
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public String main(User user , HttpSession session, Model model){
+
+        if (!StringUtils.isEmpty(user.getUserName())&& "123456".equals(user.getPassword())){
+
+            session.setAttribute("loginUser",user);
+            return "redirect:/main.html";
+
+        }
+        else {
+
+            model.addAttribute("msg","账号密码错误");
+            return "/login";
+
+        }//防治直接访问/main.html能直接进入控制页面
+        //登录成功
+//        return "redirect:/main.html";//重定向到main.html,即将请求变成main.html 因此刷新的时候不是/login请求
+
+    }           //进入主页面
+
+    /*
+    在主页面刷新的话会直接再次提交post的表单（账号密码），这就会导致不断的发送登录请求
+    所以下一个方法是解决不断发送表单进入主页面的方式
+     */
+
+    @GetMapping("/main.html")
+    public String mainPage(HttpSession session,Model model){
+
+        //是否登录。 一般用拦截器或者过滤器
+//        Object loginUser = session.getAttribute("loginUser");
+//        if (loginUser !=null){
+//            return "main";
+//        }
+//        else {
+//            model.addAttribute("msg","账号密码错误");
+//            return "/login";
+//        }
+        /*
+            有拦截器就可以不用写上面那个判断了
+         */
+    return "main";
+
+    }
+}
