@@ -94,5 +94,15 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jdbc:2.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jdbc:2.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-relational:2.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.4.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.2" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.49" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:druid:1.1.17" level="project" />
   </component>
 </module>

@@ -1,18 +1,31 @@
 package com.test.admin.controller;
 
 import com.test.admin.bean.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpSession;
 
 @Controller
 public class IndexController {
+    
+    @Autowired
+    JdbcTemplate jdbcTemplate;
+    @ResponseBody
+    @GetMapping("/sql")
+    public String queryFromDb(){
 
-
+        Long aLong = jdbcTemplate.queryForObject("select count(*) from employees",long.class);
+        return aLong.toString();
+    }
+    
+    
     // 来登录页，发请求返回登录页
     @GetMapping(value={"/","/login"})
     public String  loginPage(){

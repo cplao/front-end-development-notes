@@ -16,7 +16,7 @@ public class AdminWebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptor())
                 .addPathPatterns("/**")
-                .excludePathPatterns("/","/login","/css/**","/fonts/**","/images/**","/js/**");//表示放行指定的静态资源和登录请求
+                .excludePathPatterns("/","/login","/css/**","/fonts/**","/images/**","/js/**","/sql");//表示放行指定的静态资源和登录请求
     }
     /**
      * /**是表示所有请求（包括静态资源） addPathPatterns是指拦截什么路劲
