@@ -1,7 +1,0 @@
-#spring:
-#  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/myemployees
-#    username: root
-#    password: cpy398129519
-#    driver-class-name: com.mysql.jdbc.Driver
-#    type: com.zaxxer.hikari.HikariDataSource
