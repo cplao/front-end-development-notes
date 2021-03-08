@@ -36,4 +36,6 @@ spring:
 #            update-allow: true
 
 
-
+#mybatis-plus:   # 下面两个路劲文件必填，classpath指的是内路径
+#  config-location: classpath:mybatis/mybatis-config.xml  # 指定mybatis的配置文件位置
+#  mapper-locations: classpath:mybatis/mapper/*.xml  # 指定mybatis的mapper映射文件位置
